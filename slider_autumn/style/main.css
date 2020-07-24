@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 42px;
+	font-family: 'Marck Script', cursive;
+}
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;	
+}
+.fall{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #aeaeae;
+	flex-basis: 20%;
+	transition: all 0.2s;
+}
+.fall:hover {
+	flex-basis: 100%
+}
+.fall-1{
+	background: url(../jpg/1.jpg) no-repeat center center;
+	background-size: cover;
+}
+.fall-2{
+	background: url(../jpg/3.jpg) no-repeat center center;
+	background-size: cover;
+}
+.fall-3{
+	background: url(../jpg/2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.fall-4{
+	background: url(../jpg/4.jpg) no-repeat center center;
+	background-size: cover;
+}
+.fall-5{
+	background: url(../jpg/5.jpg) no-repeat center center;
+	background-size: cover;
+}
+@media (max-width: 640px) {
+	.slider {
+		height: 100vh;
+		flex-flow: column;
+	}
+	.fall {
+		width: 100%;
+	}
+	.fall:hover {
+	flex-grow: 40%
+}
